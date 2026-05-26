@@ -377,26 +377,115 @@
   font-size: 12px;
 }
 
+/* BUTTONS */
+
 .card-actions,
-.mini-actions {
-  display: flex;
-  gap: 14px;
-  margin-top: 28px;
+.mini-actions{
+display:flex;
+gap:14px;
+margin-top:28px;
+flex-wrap:wrap;
 }
 
 .card-actions a,
-.mini-actions a {
-  padding: 12px 22px;
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  background: linear-gradient(135deg, #7e22ce, #9333ea);
-  transition: 0.3s;
+.mini-actions a{
+
+padding:12px 24px;
+
+border-radius:14px;
+
+text-decoration:none;
+
+font-weight:600;
+
+font-size:15px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+transition:
+all .35s ease;
+
+min-width:130px;
+
 }
 
-.card-actions a:hover,
-.mini-actions a:hover {
-  transform: translateY(-3px);
+
+/* LIVE DEMO BUTTON */
+
+.card-actions a:first-child,
+.mini-actions a:first-child{
+
+background:
+linear-gradient(
+135deg,
+#06b6d4,
+#2563eb
+);
+
+color:white;
+
+box-shadow:
+0 0 25px rgba(37,99,235,.45);
+
+border:none;
+
+}
+
+.card-actions a:first-child:hover,
+.mini-actions a:first-child:hover{
+
+transform:
+translateY(-4px);
+
+box-shadow:
+0 0 40px rgba(37,99,235,.8);
+
+filter:
+brightness(1.1);
+
+}
+
+
+/* GITHUB BUTTON */
+
+.card-actions a:last-child,
+.mini-actions a:last-child{
+
+background:
+rgba(255,255,255,.06);
+
+border:
+1px solid rgba(255,255,255,.12);
+
+color:white;
+
+backdrop-filter:
+blur(15px);
+
+box-shadow:
+0 0 15px rgba(0,0,0,.25);
+
+}
+
+.card-actions a:last-child:hover,
+.mini-actions a:last-child:hover{
+
+transform:
+translateY(-4px);
+
+border-color:
+rgba(192,132,252,.7);
+
+box-shadow:
+0 0 30px rgba(168,85,247,.4);
+
+background:
+rgba(255,255,255,.09);
+
 }
 
 /* QUICK VIEW */
@@ -467,23 +556,23 @@
 }
 
 /* LIGHT MODE SUPPORT */
+/* LIGHT MODE SUPPORT - revised for a clean, neutral light theme */
 
 body.light .projects-section,
 .light .projects-section,
 .light-mode .projects-section,
 .light-theme .projects-section {
-  background:
-    radial-gradient(circle at center, rgba(168, 85, 247, 0.18), transparent 35%),
-    linear-gradient(135deg, #f8fafc, #eef2ff, #fdf4ff);
-  color: #111827;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  color: #0f172a;
 }
 
 body.light .projects-section::before,
 .light .projects-section::before,
 .light-mode .projects-section::before,
 .light-theme .projects-section::before {
-  background-image: radial-gradient(rgba(79, 70, 229, 0.35) 1px, transparent 1px);
-  opacity: 0.25;
+  background-image: radial-gradient(rgba(2,6,23,0.04) 1px, transparent 1px);
+  background-size: 120px 120px;
+  opacity: 0.06;
 }
 
 body.light .projects-header h2,
@@ -498,7 +587,7 @@ body.light .mini-project-card h4,
 .light .mini-project-card h4,
 .light-mode .mini-project-card h4,
 .light-theme .mini-project-card h4 {
-  color: #111827;
+  color: #0b1220;
 }
 
 body.light .projects-kicker,
@@ -521,7 +610,7 @@ body.light .card-view-header span,
 .light .card-view-header span,
 .light-mode .card-view-header span,
 .light-theme .card-view-header span {
-  color: #7c3aed;
+  color: #6d28d9;
 }
 
 body.light .projects-desc,
@@ -547,7 +636,7 @@ body.light .galaxy-text h3,
 .light .galaxy-text h3,
 .light-mode .galaxy-text h3,
 .light-theme .galaxy-text h3 {
-  color: #111827;
+  color: #0b1220;
 }
 
 body.light .galaxy-text p,
@@ -561,7 +650,7 @@ body.light .orbit,
 .light .orbit,
 .light-mode .orbit,
 .light-theme .orbit {
-  border-color: rgba(79, 70, 229, 0.16);
+  border-color: rgba(2, 6, 23, 0.06);
 }
 
 body.light .planet-label,
@@ -580,10 +669,10 @@ body.light .mini-project-card,
 .light .mini-project-card,
 .light-mode .mini-project-card,
 .light-theme .mini-project-card {
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(124, 58, 237, 0.16);
-  color: #111827;
-  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(2, 6, 23, 0.06);
+  color: #0b1220;
+  box-shadow: 0 16px 40px rgba(2, 6, 23, 0.04);
 }
 
 body.light .planet-label small,
@@ -601,7 +690,7 @@ body.light .mini-image,
 .light .mini-image,
 .light-mode .mini-image,
 .light-theme .mini-image {
-  background: linear-gradient(135deg, rgba(221, 214, 254, 0.95), rgba(255, 255, 255, 0.9));
+  background: linear-gradient(135deg, #f3efff, #ffffff);
 }
 
 body.light .tech-list span,
@@ -612,8 +701,47 @@ body.light .mini-tech span,
 .light .mini-tech span,
 .light-mode .mini-tech span,
 .light-theme .mini-tech span {
-  background: rgba(124, 58, 237, 0.1);
-  color: #4c1d95;
+  background: rgba(15, 23, 42, 0.04);
+  color: #0b1220;
+}
+
+/* Make action buttons clearly visible in light mode */
+body.light .card-actions a:first-child,
+.light .card-actions a:first-child,
+.light-mode .card-actions a:first-child,
+.light-theme .card-actions a:first-child,
+body.light .mini-actions a:first-child,
+.light .mini-actions a:first-child,
+.light-mode .mini-actions a:first-child,
+.light-theme .mini-actions a:first-child {
+  background: linear-gradient(135deg,#06b6d4,#2563eb);
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(37,99,235,0.18);
+  border: none;
+  padding: 12px 26px;
+  min-width: 140px;
+}
+
+body.light .card-actions a:last-child,
+.light .card-actions a:last-child,
+.light-mode .card-actions a:last-child,
+.light-theme .card-actions a:last-child,
+body.light .mini-actions a:last-child,
+.light .mini-actions a:last-child,
+.light-mode .mini-actions a:last-child,
+.light-theme .mini-actions a:last-child {
+  background: #ffffff;
+  color: #0b1220;
+  border: 1px solid rgba(2,6,23,0.06);
+  box-shadow: 0 8px 24px rgba(2,6,23,0.04);
+  padding: 12px 26px;
+  min-width: 120px;
+}
+
+/* Hide empty action anchors (href="#") to avoid blank buttons */
+.card-actions a[href="#"],
+.mini-actions a[href="#"] {
+  display: none;
 }
 
 /* RESPONSIVE */
