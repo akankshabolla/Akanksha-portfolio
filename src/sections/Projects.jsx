@@ -45,35 +45,59 @@ function Projects() {
       </div>
 
       <div className="galaxy-area">
-        <div className="galaxy-core"></div>
+        <div className="galaxy-core">
+          <div className="spiral"></div>
+          <div className="spiral spiral2"></div>
+
+          <div className="galaxy-text">
+            <h3>AKANKSHA'S</h3>
+            <h2>PROJECT GALAXY</h2>
+            <p>AI • ML • FULL STACK • GENERATIVE AI</p>
+          </div>
+        </div>
 
         <div className="orbit orbit-one"></div>
         <div className="orbit orbit-two"></div>
         <div className="orbit orbit-three"></div>
 
-        {projects.map((project) => (
-          <button
-            key={project.id}
-            className={`project-planet ${
-              selectedProject.id === project.id ? "selected" : ""
-            } ${zoomedPlanet === project.id ? "zoomed" : ""}`}
-            style={{
-              left: project.x,
-              top: project.y,
-              animationDelay: `${project.id * 0.3}s`
-            }}
-            onClick={() => handlePlanetClick(project)}
-          >
-            <div className="planet-circle">
-              <span>{project.emoji}</span>
-            </div>
+        {(() => {
+          // place planets evenly on a single circular orbit around center
+          const centerX = 50; // percent
+          const centerY = 52; // percent (matches .galaxy-core top)
+          const radius = 36; // percent radius for the orbit
+          const total = projects.length;
 
-            <div className="planet-label">
-              <strong>{project.name}</strong>
-              <small>{project.subtitle}</small>
-            </div>
-          </button>
-        ))}
+          return projects.map((project, i) => {
+            const angleDeg = -90 + (i * 360) / total; // start at top and go clockwise
+            const angleRad = (angleDeg * Math.PI) / 180;
+            const x = centerX + radius * Math.cos(angleRad);
+            const y = centerY + radius * Math.sin(angleRad);
+
+            return (
+              <button
+                key={project.id}
+                className={`project-planet ${
+                  selectedProject.id === project.id ? "selected" : ""
+                } ${zoomedPlanet === project.id ? "zoomed" : ""}`}
+                style={{
+                  left: `${x}%`,
+                  top: `${y}%`,
+                  animationDelay: `${project.id * 0.3}s`
+                }}
+                onClick={() => handlePlanetClick(project)}
+              >
+                <div className="planet-circle">
+                  <span>{project.emoji}</span>
+                </div>
+
+                <div className="planet-label">
+                  <strong>{project.name}</strong>
+                  <small>{project.subtitle}</small>
+                </div>
+              </button>
+            );
+          });
+        })()}
       </div>
 
       <div className="selected-project-card" id="selected-project-card">
@@ -85,14 +109,9 @@ function Projects() {
           <p className="selected-badge">SELECTED PROJECT</p>
 
           <h3>{selectedProject.name}</h3>
+          <p className="card-subtitle">{selectedProject.subtitle}</p>
 
-          <p className="card-subtitle">
-            {selectedProject.subtitle}
-          </p>
-
-          <p className="card-description">
-            {selectedProject.description}
-          </p>
+          <p className="card-description">{selectedProject.description}</p>
 
           <h4>Tech Stack</h4>
 
@@ -104,20 +123,12 @@ function Projects() {
 
           <div className="card-actions">
             {selectedProject.demo && selectedProject.demo !== "#" && (
-              <a
-                href={selectedProject.demo}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={selectedProject.demo} target="_blank" rel="noreferrer">
                 Live Demo
               </a>
             )}
 
-            <a
-              href={selectedProject.github}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={selectedProject.github} target="_blank" rel="noreferrer">
               GitHub
             </a>
           </div>
@@ -126,15 +137,10 @@ function Projects() {
 
       <div className="project-card-view">
         <div className="card-view-header">
-          <div>
-            <h3>
-              PROJECTS <span>QUICK VIEW</span>
-            </h3>
-
-            <p>
-              Prefer a faster view? Browse all projects instantly.
-            </p>
-          </div>
+          <h3>
+            PROJECTS <span>QUICK VIEW</span>
+          </h3>
+          <p>Prefer a faster view? Browse all projects instantly.</p>
         </div>
 
         <div className="project-grid">
@@ -149,7 +155,6 @@ function Projects() {
               </div>
 
               <h4>{project.name}</h4>
-
               <p>{project.subtitle}</p>
 
               <div className="mini-tech">

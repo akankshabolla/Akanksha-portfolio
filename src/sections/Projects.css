@@ -54,6 +54,8 @@
   opacity: 0.85;
 }
 
+/* GALAXY AREA */
+
 .galaxy-area {
   position: relative;
   height: 560px;
@@ -61,18 +63,83 @@
   z-index: 4;
 }
 
+/* UPDATED CENTER GALAXY */
+
 .galaxy-core {
   position: absolute;
   top: 52%;
   left: 50%;
-  width: 300px;
-  height: 220px;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(251, 191, 36, 0.45), rgba(168, 85, 247, 0.35), transparent 70%);
-  box-shadow: 0 0 120px rgba(168, 85, 247, 0.55);
-  filter: blur(6px);
+  width: 380px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
+
+.spiral,
+.spiral2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      from 90deg,
+      transparent,
+      rgba(168, 85, 247, 0.45),
+      transparent,
+      rgba(236, 72, 153, 0.35),
+      transparent
+    );
+  filter: blur(35px);
+  animation: spinGalaxy 35s linear infinite;
+}
+
+.spiral2 {
+  transform: scale(0.75);
+  animation-duration: 25s;
+  animation-direction: reverse;
+  opacity: 0.8;
+}
+
+.galaxy-text {
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+}
+
+.galaxy-text h3 {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+
+.galaxy-text h2 {
+  font-size: 38px;
+  color: #d8b4fe;
+  margin: 5px 0;
+  line-height: 1;
+}
+
+.galaxy-text p {
+  font-size: 12px;
+  color: #cbd5e1;
+  letter-spacing: 2px;
+}
+
+@keyframes spinGalaxy {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ORBITS */
 
 .orbit {
   position: absolute;
@@ -100,6 +167,8 @@
   height: 400px;
   transform: translate(-50%, -50%) rotate(-12deg);
 }
+
+/* PLANETS */
 
 .project-planet {
   position: absolute;
@@ -164,7 +233,8 @@
 }
 
 @keyframes floatPlanet {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-50%, -50%) translateY(0);
   }
 
@@ -172,6 +242,8 @@
     transform: translate(-50%, -50%) translateY(-12px);
   }
 }
+
+/* ZOOM OVERLAY */
 
 .planet-zoom-overlay {
   position: fixed;
@@ -227,6 +299,8 @@
     opacity: 0;
   }
 }
+
+/* SELECTED CARD */
 
 .selected-project-card {
   position: relative;
@@ -325,6 +399,8 @@
   transform: translateY(-3px);
 }
 
+/* QUICK VIEW */
+
 .project-card-view {
   position: relative;
   z-index: 5;
@@ -391,7 +467,6 @@
 }
 
 /* LIGHT MODE SUPPORT */
-/* Works with: body.light, .light, .light-mode, .light-theme */
 
 body.light .projects-section,
 .light .projects-section,
@@ -468,12 +543,18 @@ body.light .mini-project-card p,
   color: #475569;
 }
 
-body.light .galaxy-core,
-.light .galaxy-core,
-.light-mode .galaxy-core,
-.light-theme .galaxy-core {
-  background: radial-gradient(circle, rgba(250, 204, 21, 0.5), rgba(168, 85, 247, 0.22), transparent 70%);
-  box-shadow: 0 0 100px rgba(168, 85, 247, 0.28);
+body.light .galaxy-text h3,
+.light .galaxy-text h3,
+.light-mode .galaxy-text h3,
+.light-theme .galaxy-text h3 {
+  color: #111827;
+}
+
+body.light .galaxy-text p,
+.light .galaxy-text p,
+.light-mode .galaxy-text p,
+.light-theme .galaxy-text p {
+  color: #475569;
 }
 
 body.light .orbit,
@@ -535,6 +616,8 @@ body.light .mini-tech span,
   color: #4c1d95;
 }
 
+/* RESPONSIVE */
+
 @media (max-width: 900px) {
   .projects-section {
     padding: 90px 5% 55px;
@@ -542,6 +625,23 @@ body.light .mini-tech span,
 
   .galaxy-area {
     height: 520px;
+  }
+
+  .galaxy-core {
+    width: 300px;
+    height: 300px;
+  }
+
+  .galaxy-text h3 {
+    font-size: 18px;
+  }
+
+  .galaxy-text h2 {
+    font-size: 30px;
+  }
+
+  .galaxy-text p {
+    font-size: 10px;
   }
 
   .orbit-one {
