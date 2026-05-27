@@ -1,16 +1,70 @@
-# React + Vite
+# Akanksha Portfolio 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and AI-inspired developer portfolio built to showcase my projects, technical skills, certifications, and experience in Artificial Intelligence, Machine Learning, Full-Stack Development, and scalable software systems.
 
-Currently, two official plugins are available:
+Designed with a futuristic galaxy-inspired UI, smooth animations, glassmorphism effects, and a recruiter-focused user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌐 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 https://akanksha-portfolio-ruddy.vercel.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💻 GitHub Repository
+
+🔗 https://github.com/akankshabolla/Akanksha-portfolio
+
+---
+
+# ✨ Features
+
+- Fully Responsive Design
+- Dynamic Dark / Light Mode
+- Modern Glassmorphism UI
+- Animated Galaxy-Inspired Backgrounds
+- Interactive Project Showcase
+- Experience Timeline
+- Education & Certifications Section
+- Smooth Hover Effects & Transitions
+- Recruiter-Friendly Layout
+- Optimized for Desktop, Tablet & Mobile Devices
+
+---
+
+# 🛠 Technologies Used
+
+## Frontend
+- React.js
+- JavaScript (ES6+)
+- Vite
+
+## UI / Styling
+- CSS3
+- Responsive Design
+- Glassmorphism UI
+- Custom Animations
+- Lucide React Icons
+
+## Deployment & Version Control
+- Git
+- GitHub
+- Vercel
+
+---
+
+# 📂 Project Structure
+
+```bash
+src
+ ┣ components
+ ┣ sections
+ ┣ assets
+ ┣ App.jsx
+ ┣ main.jsx
+
+public
+ ┣ images
+ ┣ certificates
+ ┣ resume.pdf
