@@ -52,7 +52,7 @@ function Projects() {
           <div className="galaxy-text">
             <h3>AKANKSHA'S</h3>
             <h2>PROJECT GALAXY</h2>
-            <p>AI • ML • FULL STACK • GENERATIVE AI</p>
+            <p>GENERATIVE AI • AI • ML • FULL STACK</p>
           </div>
         </div>
 

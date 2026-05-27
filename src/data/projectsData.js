@@ -1,22 +1,6 @@
 const projects = [
 {
 id:1,
-name:"EmotiveChat",
-subtitle:"Emotion-Aware AI Chatbot",
-emoji:"💬",
-x:"23%",
-y:"16%",
-tech:["React","Flask","BERT"],
-
-description:
-"Built an AI-powered emotion-aware chatbot using React, Flask, and a BERT-based emotion classifier. The system detects user emotions in real time and generates context-aware responses using NLP techniques and Hugging Face models. Implemented emotion recognition, response generation, and conversational flow to create more human-like interactions.",
-
-github:"https://github.com/akankshabolla/Sentiment_aware_chatbot",
-
-},
-
-{
-id:2,
 name:"Learnova",
 subtitle:"AI Study Assistant",
 emoji:"🧠",
@@ -30,6 +14,22 @@ description:
 github:"https://github.com/akankshabolla/learnova-",
 
 demo:"https://learnova-olive-eight.vercel.app/"
+},
+
+{
+id:2,
+name:"EmotiveChat",
+subtitle:"Emotion-Aware AI Chatbot",
+emoji:"💬",
+x:"23%",
+y:"16%",
+tech:["React","Flask","BERT"],
+
+description:
+"Built an AI-powered emotion-aware chatbot using React, Flask, and a BERT-based emotion classifier. The system detects user emotions in real time and generates context-aware responses using NLP techniques and Hugging Face models. Implemented emotion recognition, response generation, and conversational flow to create more human-like interactions.",
+
+github:"https://github.com/akankshabolla/Sentiment_aware_chatbot",
+
 },
 
 {
@@ -50,25 +50,25 @@ github:"https://github.com/akankshabolla/Microservices-Ecommerce-project",
 
 {
 id:4,
-name:"Food Calorie Estimator",
-subtitle:"CNN-based Calorie Prediction",
-emoji:"🍎",
-x:"22%",
-y:"67%",
-tech:["Python","CNN","TensorFlow"],
+name:"The Foodie Spot",
+subtitle:"Restaurant Ordering App",
+emoji:"🍽️",
+x:"74%",
+y:"64%",
+tech:["Full Stack","Web App","Database"],
 
 description:
-"Built a computer vision system that identifies food items and estimates calorie values using deep learning. Implemented CNN-based image classification and nutrition mapping techniques to provide intelligent calorie predictions from uploaded food images.",
+"Developed a full-stack restaurant ordering platform with menu browsing, order placement, and user interaction workflows. Built end-to-end functionality including frontend UI, backend integration, and database management.",
 
-github:"https://github.com/akankshabolla/Food-calorie-estimation",
+github:"https://github.com/akankshabolla/thefoodiespot",
 
 },
 
 {
 id:5,
-name:"Video AI Project",
+name:"Ai data engine",
 subtitle:"In Progress",
-emoji:"🎥",
+emoji:"🗄️",
 x:"48%",
 y:"66%",
 tech:["PyTorch","Video Models","Ensemble"],
@@ -83,17 +83,17 @@ demo:"#"
 
 {
 id:6,
-name:"The Foodie Spot",
-subtitle:"Restaurant Ordering App",
-emoji:"🍽️",
-x:"74%",
-y:"64%",
-tech:["Full Stack","Web App","Database"],
+name:"Food Calorie Estimator",
+subtitle:"CNN-based Calorie Prediction",
+emoji:"🍎",
+x:"22%",
+y:"67%",
+tech:["Python","CNN","TensorFlow"],
 
 description:
-"Developed a full-stack restaurant ordering platform with menu browsing, order placement, and user interaction workflows. Built end-to-end functionality including frontend UI, backend integration, and database management.",
+"Built a computer vision system that identifies food items and estimates calorie values using deep learning. Implemented CNN-based image classification and nutrition mapping techniques to provide intelligent calorie predictions from uploaded food images.",
 
-github:"https://github.com/akankshabolla/thefoodiespot",
+github:"https://github.com/akankshabolla/Food-calorie-estimation",
 
 }
 

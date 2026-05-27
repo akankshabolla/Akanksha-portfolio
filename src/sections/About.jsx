@@ -47,10 +47,10 @@ function About() {
         </div>
 
         <div className="about-highlights">
-          <div className="highlight-card"><FaBrain /> AI / ML</div>
-          <div className="highlight-card"><FaLaptopCode /> Full Stack</div>
-          <div className="highlight-card"><FaRocket /> Generative AI</div>
-          <div className="highlight-card"><FaLayerGroup /> 10+ Projects</div>
+          <div className="highlight-card"><span className="highlight-inner"><FaBrain /> <span className="highlight-label">AI / ML</span></span></div>
+          <div className="highlight-card"><span className="highlight-inner"><FaLaptopCode /> <span className="highlight-label">Full Stack</span></span></div>
+          <div className="highlight-card"><span className="highlight-inner"><FaRocket /> <span className="highlight-label">Generative AI</span></span></div>
+          <div className="highlight-card"><span className="highlight-inner"><FaLayerGroup /> <span className="highlight-label">10+ Projects</span></span></div>
         </div>
 
         <div className="stats">

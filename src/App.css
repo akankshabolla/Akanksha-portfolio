@@ -87,7 +87,7 @@ body{
   background: transparent;
   border: none;
   color: white;
-  cursor: pointer;
+  cursor: default;
 }
 /* Navbar links */
 
@@ -968,7 +968,17 @@ translateY(-35px);
   font-size: 20px;
 }
 
-.highlight-card:hover {
+/* Hover now scoped to inner element to avoid large hover area */
+.highlight-card .highlight-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  transition: 0.35s ease;
+}
+
+.highlight-card .highlight-inner:hover {
   transform: translateY(-7px);
   background: rgba(124, 58, 237, 0.24);
   box-shadow: 0 0 28px rgba(168, 85, 247, 0.4);
