@@ -14,7 +14,7 @@ function Experience() {
     {
       side: "right",
       icon: "📘",
-      year: "2025",
+      year: "2024",
       title: "Teaching Assistant — Statistics",
       company: "Texas A&M University–Corpus Christi",
       date: "Sep 2024 – dec 2025",
@@ -41,10 +41,10 @@ function Experience() {
     {
       side: "left",
       icon: "🚀",
-      year: "2022",
+      year: "2021",
       title: "Codex Club Leadership Member",
       company: "GITAM University",
-      date: "Mar 2022 – Aug 2023",
+      date: "Mar 2021 – Aug 2022",
       desc: "Organized university-wide hackathons, coding competitions, and technical events while fostering a collaborative developer community.",
     },
   ];

@@ -61,7 +61,7 @@ function About() {
 
           <div className="stat-box">
             <h3>2+</h3>
-            <p>Years Internship Experience</p>
+            <p>Years Building Real-world Applications</p>
           </div>
 
           <div className="stat-box">
