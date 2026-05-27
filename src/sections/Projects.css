@@ -705,6 +705,48 @@ body.light .mini-tech span,
   color: #0b1220;
 }
 
+/* Improve visibility for central galaxy and planets in light mode */
+body.light .galaxy-text h2,
+.light .galaxy-text h2,
+.light-mode .galaxy-text h2,
+.light-theme .galaxy-text h2 {
+  color: #6d28d9; /* stronger purple for visibility */
+  font-weight: 900;
+  text-shadow: 0 6px 18px rgba(109,40,217,0.08);
+}
+
+body.light .orbit,
+.light .orbit,
+.light-mode .orbit,
+.light-theme .orbit {
+  border-color: rgba(2, 6, 23, 0.08);
+}
+
+body.light .planet-circle,
+.light .planet-circle,
+.light-mode .planet-circle,
+.light-theme .planet-circle {
+  box-shadow: 0 12px 40px rgba(99,102,241,0.12);
+}
+
+body.light .planet-label,
+.light .planet-label,
+.light-mode .planet-label,
+.light-theme .planet-label {
+  background: rgba(255,255,255,0.98);
+  border: 1px solid rgba(2,6,23,0.04);
+}
+
+/* Make the spiral/core more visible on light backgrounds */
+body.light .galaxy-core .spiral,
+.light .galaxy-core .spiral2,
+.light .galaxy-core .spiral,
+.light-theme .galaxy-core .spiral2 {
+  background: conic-gradient(from 90deg, transparent, rgba(124,58,237,0.18), transparent, rgba(236,72,153,0.12), transparent);
+  filter: blur(28px);
+  opacity: 0.95;
+}
+
 /* Make action buttons clearly visible in light mode */
 body.light .card-actions a:first-child,
 .light .card-actions a:first-child,
