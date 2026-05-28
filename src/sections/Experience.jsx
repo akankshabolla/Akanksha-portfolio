@@ -42,7 +42,7 @@ function Experience() {
       side: "left",
       icon: "🚀",
       year: "2021",
-      title: "Codex Club Leadership Member",
+      title: "Codex Club student coordinator",
       company: "GITAM University",
       date: "Mar 2021 – Aug 2022",
       desc: "Organized university-wide hackathons, coding competitions, and technical events while fostering a collaborative developer community.",
