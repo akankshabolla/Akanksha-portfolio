@@ -8,7 +8,7 @@ function Experience() {
       year: "2025",
       title: "Research Assistant — Generative AI",
       company: "Texas A&M University–Corpus Christi",
-      date: "Jan 2025 – May 2026",
+      date: "Jan 2026 – May 2026",
       desc: "Engineered a Generative AI workflow to automate test case generation from requirements and user stories, reducing manual effort by 40%.",
     },
     {
