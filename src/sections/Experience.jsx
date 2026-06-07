@@ -22,9 +22,9 @@ function Experience() {
     },
     {
       side: "left",
-      icon: "🍽️",
+      icon: "📊",
       year: "2023",
-      title: "Full Stack Development Intern",
+      title: "Data Analyst",
       company: "Secure Info Technologies - Remote",
       date: "May 2023 – Jun 2024",
       desc: "Leveraged Python, SQL, and data analytics techniques to preprocess, analyze, and transform large datasets for predictive modeling and AI-driven insights, enabling more effective business decision-making.",
