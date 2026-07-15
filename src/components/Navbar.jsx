@@ -25,7 +25,7 @@ function Navbar() {
         <a href="#education" onClick={() => setMenuOpen(false)}>Education & Certifications</a>
         <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
 
-        <a href="/resume_akanksha.pdf" className="resume-btn" download>
+        <a href="/akanksha_bolla.pdf" className="resume-btn" download="akanksha_bolla.pdf">
           Resume ↓
         </a>
       </div>

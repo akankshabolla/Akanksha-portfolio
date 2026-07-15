@@ -88,8 +88,7 @@ function Contact() {
 
               <a
                 href="/akanksha_bolla.pdf"
-                target="_blank"
-                rel="noreferrer"
+                download="akanksha_bolla.pdf"
                 className="outline-contact-btn"
               >
                 <Download size={18} />
