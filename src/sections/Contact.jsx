@@ -87,7 +87,7 @@ function Contact() {
               </a>
 
               <a
-                href="/resume_akanksha.pdf"
+                href="/akanksha_bolla.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="outline-contact-btn"

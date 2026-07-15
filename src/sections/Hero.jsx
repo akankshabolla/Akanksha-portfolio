@@ -40,7 +40,7 @@ function Hero() {
             View My Work
           </a>
 
-          <a href="/resume_akanksha.pdf" className="outline-btn" download>
+          <a href="/akanksha_bolla.pdf" className="outline-btn" download>
             Download Resume ↓
           </a>
         </div>
