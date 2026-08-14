@@ -1,11 +1,12 @@
-import profile from "../assets/profile.jpg";
 import {
   FaBrain,
   FaLaptopCode,
   FaRocket,
-  FaLayerGroup
+  FaLayerGroup,
+  FaGithub
 } from "react-icons/fa";
 
+const githubUrl = "https://github.com/akankshabolla";
 
 function About() {
   return (
@@ -13,9 +14,19 @@ function About() {
       <div className="about-glow"></div>
 
       <div className="about-left">
-        <div className="profile-card">
-          <img src={profile} alt="Akanksha Bolla" className="profile-image" />
-        </div>
+        <a
+          href={githubUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="profile-card github-card"
+          aria-label="Visit Akanksha Bolla on GitHub"
+        >
+          <span className="github-icon">
+            <FaGithub />
+          </span>
+          <span className="github-label">GitHub</span>
+          <span className="github-handle">@akankshabolla</span>
+        </a>
       </div>
 
       <div className="about-right">
